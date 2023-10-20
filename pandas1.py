@@ -36,11 +36,10 @@ print(cols_date.dtypes)
 
 ############################## Task 2 ####################################
 
-df['Insignificant'] = df['Insignificant'].replace(['x', np.nan],['y','N'])
-
-
+df['Insignificant'] = df['Insignificant'].replace(['x', np.nan],['Y','N'])
 
 # print(df['Insignificant'])
+df['Tent Pole Execution'] = df['Tent Pole Execution'].replace(['X', np.nan],['Y','N'])
 
 
 df[selected_columns1]=df[selected_columns1].fillna(0)
