@@ -13,10 +13,6 @@ columns_to_consider=['Timeperiod', 'Reporting_Year', 'Contribution_Type', 'Contr
 df = pd.read_excel("/home/sigmoid/Downloads/sample.xlsx",sheet_name="Master_Dataset",usecols=columns_to_consider)
 
 
-
-
-
-
 selected_columns1 = ['_15s', '_30s','_60s', 'Driver', 'LBS', 'Direct LBS', 'Halo LBS', 'Impressions','Profit_Per_LBS', 'GSV_Per_LBS','Production_Costs', 'Media_Costs', 'Total_Spend', 'Margin_Dollars', 'GSV_Dollars', 'Line Lookup']
 cols_float= df[selected_columns1]
 cols_float=cols_float.apply(pd.to_numeric, errors='coerce')
